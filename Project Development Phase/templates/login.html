@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Responsive Login and Signup Form </title>
+        <link rel="stylesheet" href="../static/index.css">         
+                        
+    </head>
+    <body class="login">        
+        <nav>       
+            <ul>
+                <li><a href="" class="logo"><h1>AI Enable car parking using OpenCV</h1></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+                    <form action="/log" method="POST">
+                        <div class="field input-field">
+                            <label for="email">Email</label><br>
+                            <input type="email" placeholder="Email" name="email" class="input">
+                        </div><br>
+
+                        <div class="field input-field">
+                            <label for="password">Password</label><br>
+                            <input type="password" placeholder="Password" name="password" class="password">
+                        </div><br>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button type="submit">Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="register.html" class="link signup-link">Signup</a></span>
+                    </div>
+                </div>
+
+
+            </div>
+
+             </section>
+    </body>
+</html>

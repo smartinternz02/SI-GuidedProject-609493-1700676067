@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: #BE3144;
+    width: 100vw;
+    display: flex;
+    position: sticky;
+    top: 0;
+
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 70px;
+}
+nav a{
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    padding: 0 30px;
+    color: whitesmoke;
+    align-items: center;
+    font-size: larger;
+}
+nav a:not(.logo):hover{
+    background-color: #952735;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.landingText{
+    background-image: url(/static/images/Transport-Services-Ahmedabad-Airport.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rev{
+    font-size: 4em;
+    color: white;
+    padding-top: 300px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.ai{
+    font-size: 2em;
+    color: white;
+    padding-left: 10px;
+}
+button{
+    position: absolute;
+    border: solid white 1px;
+    color: white;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 1em;
+}
+button:hover{
+    background-color:rgba(255,255,255,0.25); 
+    transition: background-color 0.7s;
+    cursor: pointer;
+}
+.landingImage{
+    height: 100vh;
+    width: 100vw;
+    filter: brightness(0.5);
+}
+.about{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.aboutContent{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.aboutImage{
+    width: 40vw;
+    height: 50vh;
+}
+#aboutMain{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+}
+#aboutPara{
+    font-style: italic;
+    padding: 7px;
+}
+.aboutText{
+    width: 40vw;
+    height: 50vh;
+}
+.aboutText ul{
+    list-style-position: inside;
+    padding: 7px;
+    list-style-image: url(../uploads/check-7059.png);
+}
+.aboutText li{
+    font-size: 1.1em;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* Index.html */
+
+
+.login{
+ background-image: url("https://e1.pxfuel.com/desktop-wallpaper/254/1009/desktop-wallpaper-a-lounge-of-godzilla-s-nissan-r35-gt-r32-gt-r.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    column-gap: 30px;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 45px;
+    border-radius: 6px;
+    background: #FFF;
+}
+.form.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+.forms.show-signup .form.signup{
+    opacity: 1;
+    pointer-events: auto;
+}
+.forms.show-signup .form.login{
+    opacity: 0;
+    pointer-events: none;
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+}
+.field input:focus{
+    border-bottom-width: 2px;
+}
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+.field button{
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: #016dcb;
+}
+.form-link{
+    text-align: center;
+    margin-top: 30px;
+}
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+.form a{
+    color: #0171d3;
+    text-decoration: none;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+.line::before{
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
